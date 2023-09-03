@@ -30,7 +30,7 @@ export default function Header() {
                     ))
                 }
                 <Link to="signin" className='h-button w-header-button bg-black rounded-full bottom-2 p-2 pl-4 relative cursor-pointer'>
-                    <Text as='span' className='text-white hover:text-white'>Get started</Text>
+                    <Text className='text-white hover:text-white'>Get started</Text>
                 </Link>
             </Flex>
         </Box>

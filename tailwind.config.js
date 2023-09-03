@@ -10,7 +10,8 @@ export default {
       height: {
         'header': '76px',
         'button': '38px',
-        'home-section': '455px'
+        'home-section': '455px',
+        'trending': '346px'
       },
       width: {
         'header-button': '104px',
