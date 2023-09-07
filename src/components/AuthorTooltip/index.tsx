@@ -1,6 +1,6 @@
 import * as Tooltip from '@radix-ui/react-tooltip';
 import { Avatar, Button, Flex, Separator, Strong, Text } from '@radix-ui/themes';
-import BookOutlineIcon from '../../assets/icons/book-outline.svg'
+import BookOutlineIcon from '../../assets/icons/book-outline.svg';
 
 const AuthorTooltip = ({ children, user }) => {
 
@@ -17,20 +17,20 @@ const AuthorTooltip = ({ children, user }) => {
                         side='right'
                     >
                         <Flex>
-                            <Avatar src={user.pic} fallback='...' className="h-8 w-8 rounded-full cursor-pointer"></Avatar>
-                            <Strong className="text-black ml-2 text-lg font-medium p-1 cursor-pointer">{user.name}</Strong>
+                            <Avatar src={user?.pic} fallback='...' className="h-8 w-8 rounded-full cursor-pointer"></Avatar>
+                            <Strong className="text-black ml-2 text-lg font-medium p-1 cursor-pointer">{user?.name}</Strong>
                         </Flex>
                         {
-                            user.verified &&
+                            user?.verified &&
                             <Flex className='mt-4'>
                                 <img className='h-3 w-3 mr-2' src={BookOutlineIcon} alt="Book Outline Icon" />
                                 <Text className='font-medium'>Book Author</Text>
                             </Flex>
                         }
-                        <Text as='p' className='mt-4'>{user.description}</Text>
+                        <Text as='p' className='mt-4'>{user?.description}</Text>
                         <Separator className='mt-4 mb-4 bg-slate-200' orientation='horizontal' />
                         <Flex>
-                            <Text className='text-slate-600'>{`${user.followers.toLocaleString()} Followers`}</Text>
+                            <Text className='text-slate-600'>{`${user?.followers.toLocaleString()} Followers`}</Text>
                             <Button className='ml-auto text-sm font-light bg-green-600 text-white rounded-full hover:bg-green-800'>Follow</Button>
                         </Flex>
                         <Tooltip.Arrow className="fill-white" />

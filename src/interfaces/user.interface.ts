@@ -3,5 +3,5 @@ export interface User {
     pic: any;
     verified: boolean;
     description: string;
-    followers: number;
+    followers: string | number;
 }

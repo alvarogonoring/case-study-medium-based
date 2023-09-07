@@ -2,7 +2,7 @@ import { Box, Flex, Text, Strong, Avatar, Tooltip } from "@radix-ui/themes";
 import SparklesSharpIcon from '../../assets/icons/sparkles-sharp.svg';
 import BookOutlineIcon from '../../assets/icons/book-outline.svg';
 import { Trend as ITrend } from "../../interfaces/trend.interface";
-import { getFullMonthText } from "../../utils/format.utils";
+import { formatFollowers, getFullMonthText } from "../../utils/format.utils";
 import AuthorTooltip from "../AuthorTooltip";
 import { mockUsers } from "../../mocks/mock-users";
 
@@ -32,7 +32,8 @@ export default function Trend(
     }
 
     const fetchUserByAuthorName = (name: string) => {
-        return mockUsers.find(user => user.name === name)
+
+        return formatFollowers(mockUsers).find(user => user.name === name)
     }
 
     return (
