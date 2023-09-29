@@ -11,7 +11,8 @@ export default {
         'header': '76px',
         'button': '38px',
         'home-section': '455px',
-        'trending': '346px'
+        'trending': '346px',
+        'category': '20px'
       },
       width: {
         'header-button': '104px',

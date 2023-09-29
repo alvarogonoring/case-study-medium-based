@@ -10,7 +10,7 @@ export function getFullMonthText(value: number) {
 }
 
 export function formatFollowers(value: User[]): User[] {
-    const regex = /\.0*([1-9])?0*$/;
+    const regex = /\.0*([1-9])?0*$/
     const afterPointIsPositive = /\.([1-9])/
 
     const formattedFollowers: User[] = [];

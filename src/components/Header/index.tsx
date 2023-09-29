@@ -10,7 +10,7 @@ export default function Header() {
     ]
 
     return (
-        <Box className='h-header bg-amber-400 border-b border-y-zinc-950 flex items-center justify-center pt-4'>
+        <Box className='h-header w-full bg-amber-400 border-b border-y-zinc-950 flex items-center justify-center pt-4 fixed'>
             <Flex className='cursor-pointer'>
                 <Link to='/' className='flex'>
                     <Box className='h-5 w-5 bg-black rounded-full' />

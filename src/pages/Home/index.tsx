@@ -2,6 +2,8 @@ import { Container, Box, Section, Flex, Heading, Text, Button, Grid } from "@rad
 import TrendingUpSharpIcon from '../../assets/icons/trending-up-sharp.svg';
 import Trend from "../../components/Trend";
 import { mockTrends } from "./mocks/mock-trends";
+import { mockHomeFeedItems } from "./mocks/mock-home-feed-items";
+import HomeFeedItem from "../../components/HomeFeedItem";
 
 export default function Home() {
 
@@ -13,7 +15,7 @@ export default function Home() {
                         <Box>
                             <Heading as="h1" className="text-8xl font-serif text-black font-light">Stay curious.</Heading>
                             <Heading as="h2" className="font-serif text-black font-light mt-7">Discover stories, thinking, and expertise from writers on any topic.</Heading>
-                            <Button className='h-button w-home-section-button bg-slate-900 rounded-full bottom-2 p-2 pl-4 relative cursor-pointer mt-20'>
+                            <Button className='h-button w-home-section-button bg-slate-900 rounded-full bottom-2 p-2 pl-4 relative cursor-pointer mt-20 hover:bg-black'>
                                 <Text as='span' className='text-white hover:text-white text-lg'>Start reading</Text>
                             </Button>
                         </Box>
@@ -41,12 +43,39 @@ export default function Home() {
                                         title={trend.title}
                                         isPublisherVerifiedAuthor={trend.isPublisherVerifiedAuthor}
                                         memberOnlyStory={trend.memberOnlyStory}
-                                        registeredCategory={trend.registeredCategory}
+                                        blogName={trend.blogName}
                                     />
                                 </Flex>
                             ))
                         }
                     </Grid>
+                </Section>
+            </Container>
+            <Container>
+                <Section>
+                    <Flex>
+                        <Box>
+                            {
+                                mockHomeFeedItems.map((item, index) => (
+                                    <HomeFeedItem
+                                        key={index}
+                                        pic={item.pic}
+                                        authorName={item.authorName}
+                                        authorPic={item.authorPic}
+                                        createdAt={item.createdAt}
+                                        suggestedReadingTime={item.suggestedReadingTime}
+                                        title={item.title}
+                                        subtitle={item.subtitle}
+                                        isPublisherVerifiedAuthor={item.isPublisherVerifiedAuthor}
+                                        memberOnlyStory={item.memberOnlyStory}
+                                        blogName={item.blogName}
+                                        category={item.category}
+                                    />
+                                ))
+                            }
+                        </Box>
+                        <Box>Right</Box>
+                    </Flex>
                 </Section>
             </Container>
         </>

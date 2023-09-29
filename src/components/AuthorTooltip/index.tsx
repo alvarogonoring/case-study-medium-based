@@ -27,7 +27,7 @@ const AuthorTooltip = ({ children, user }) => {
                                 <Text className='font-medium'>Book Author</Text>
                             </Flex>
                         }
-                        <Text as='p' className='mt-4'>{user?.description}</Text>
+                        <Text as='p' className='mt-4 font-light text-black' style={{ fontSize: 13 }}>{user?.description}</Text>
                         <Separator className='mt-4 mb-4 bg-slate-200' orientation='horizontal' />
                         <Flex>
                             <Text className='text-slate-600'>{`${user?.followers.toLocaleString()} Followers`}</Text>

@@ -15,7 +15,7 @@ export const mockTrends: ITrend[] = [
         suggestedReadingTime: 7,
         isPublisherVerifiedAuthor: false,
         memberOnlyStory: false,
-        registeredCategory: ''
+        blogName: ''
     },
     {
         rank: 2,
@@ -26,7 +26,7 @@ export const mockTrends: ITrend[] = [
         suggestedReadingTime: 3,
         isPublisherVerifiedAuthor: true,
         memberOnlyStory: true,
-        registeredCategory: ''
+        blogName: ''
     },
     {
         rank: 3,
@@ -37,7 +37,7 @@ export const mockTrends: ITrend[] = [
         suggestedReadingTime: 12,
         isPublisherVerifiedAuthor: false,
         memberOnlyStory: false,
-        registeredCategory: 'Flutter'
+        blogName: 'Flutter'
     },
     {
         rank: 4,
@@ -48,7 +48,7 @@ export const mockTrends: ITrend[] = [
         suggestedReadingTime: 4,
         isPublisherVerifiedAuthor: false,
         memberOnlyStory: true,
-        registeredCategory: ''
+        blogName: ''
     },
     {
         rank: 5,
@@ -59,7 +59,7 @@ export const mockTrends: ITrend[] = [
         suggestedReadingTime: 5,
         isPublisherVerifiedAuthor: false,
         memberOnlyStory: true,
-        registeredCategory: 'Artificial Corner'
+        blogName: 'Artificial Corner'
     },
     {
         rank: 6,
@@ -70,6 +70,6 @@ export const mockTrends: ITrend[] = [
         suggestedReadingTime: 7,
         isPublisherVerifiedAuthor: true,
         memberOnlyStory: true,
-        registeredCategory: ''
+        blogName: ''
     },
 ]

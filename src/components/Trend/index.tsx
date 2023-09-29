@@ -15,7 +15,7 @@ export default function Trend(
         suggestedReadingTime,
         isPublisherVerifiedAuthor,
         memberOnlyStory,
-        registeredCategory
+        blogName
     }: ITrend) {
 
     const getMonthDay = (date: Date) => `${getFullMonthText(date.getMonth()).slice(0, 3)} ${date.getDate()}`
@@ -26,7 +26,7 @@ export default function Trend(
                 &nbsp;
                 <Text className="text-xs text-slate-500 cursor-auto">in</Text>
                 &nbsp;
-                <Text className="text-black text-xs font-medium">{registeredCategory}</Text>
+                <Text className="text-black text-xs font-medium">{blogName}</Text>
             </Flex>
         )
     }
@@ -49,7 +49,7 @@ export default function Trend(
                                 {isPublisherVerifiedAuthor && <img className="h-3 w-3 ml-2" src={BookOutlineIcon} alt="Sparkles Sharp Icon" />}
                             </Flex>
                         </AuthorTooltip>
-                        {registeredCategory && <RegisteredCategory />}
+                        {blogName && <RegisteredCategory />}
                     </Text>
                 </Flex>
                 <Strong className="mt-2 mb-2 cursor-pointer">{title}</Strong>

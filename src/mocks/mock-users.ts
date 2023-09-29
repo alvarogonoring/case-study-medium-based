@@ -8,6 +8,13 @@ import { User } from '../interfaces/user.interface';
 export const mockUsers: User[] = [
     {
         pic: '',
+        name: 'NewsApp Staff',
+        verified: false,
+        description: 'News and updates from the staff at NewsApp.',
+        followers: 75000000
+    },
+    {
+        pic: '',
         name: 'The Bold Italic',
         verified: false,
         description: 'We’re the The Bold Italic, an online magazine celebrating the spirit of San Francisco. Brought to you by GrowSF.',
