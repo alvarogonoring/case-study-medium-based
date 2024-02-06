@@ -11,7 +11,7 @@ export const mockUsers: User[] = [
         name: 'NewsApp Staff',
         verified: false,
         description: 'News and updates from the staff at NewsApp.',
-        followers: 75000000
+        followers: 750000
     },
     {
         pic: '',

@@ -82,7 +82,7 @@ export default function HomeFeedItem({
                     </Link>
                 </Text>
             </Flex>
-            <Box>
+            <Box className="ml-auto">
                 <Link to=':article'>
                     <img src={pic} className="h-32 w-48" />
                 </Link>

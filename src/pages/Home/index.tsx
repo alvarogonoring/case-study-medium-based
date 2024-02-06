@@ -54,7 +54,7 @@ export default function Home() {
             <Container>
                 <Section>
                     <Flex>
-                        <Box>
+                        <Box className="w-full">
                             {
                                 mockHomeFeedItems.map((item, index) => (
                                     <HomeFeedItem
@@ -74,7 +74,6 @@ export default function Home() {
                                 ))
                             }
                         </Box>
-                        <Box>Right</Box>
                     </Flex>
                 </Section>
             </Container>
