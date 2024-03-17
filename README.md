@@ -18,7 +18,7 @@ Make sure you have [Node.js](https://nodejs.org/) installed on your machine.
 
 ```bash
 git clone https://github.com/alvarogonoring/radix-tailwind-news-blog.git
-cd your-project
+cd radix-tailwind-news-blog
 ```
 
 2. Install dependencies:
@@ -34,4 +34,4 @@ To start the development server, run:
 npm run dev
 ```
 
-This will start the Vite project with React at http://localhost:3000.
+This will start the Vite project with React at http://localhost:5173.
